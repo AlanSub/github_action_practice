@@ -1,7 +1,7 @@
 import os, subprocess
 
 # Settings
-TEST_DIR = "/tests"
+TEST_DIR = "."
 CODE_FILE = "main.c"
 COMPILER_TIMEOUT = 10.0
 RUN_TIMEOUT = 10.0
@@ -35,7 +35,7 @@ if ret.returncode != 0:
 
 # Run the compiled program
 print("Running...")
-tyr:
+try:
     ret = subprocess.run([app_path],
                             stdout=subprocess.PIPE,
                             timeout=RUN_TIMEOUT)
