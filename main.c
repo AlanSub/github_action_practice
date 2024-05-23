@@ -2,7 +2,7 @@
 
 int main()
 {
-	printf("Hello github action from C!")
+	printf("Hello github action from C!");
 	
 	return 0;
 }
